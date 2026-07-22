@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfect Spinner</title>
+  <style>
+    @keyframes grow {
+      from {
+        stroke-dasharray:
+          calc(var(--circumference) * 0.05),
+          var(--circumference);
+      }
+      to {
+        stroke-dasharray:
+          calc(var(--circumference) * 0.25),
+          var(--circumference);
+      }
+    }
+
+    @keyframes spin {
+      from {
+        stroke-dashoffset: 0;
+      }
+      to {
+        stroke-dashoffset:
+          calc(var(--circumference) * -0.95);
+      }
+    }
+
+    circle {
+      --circumference: 572px;
+      animation:
+        grow 1200ms infinite alternate,
+        spin 2400ms infinite alternate;
+        
+      /* Optional: Rotates the circle so the animation starts at the top (12 o'clock) */
+      transform: rotate(-90deg);
+      transform-origin: 50% 50%;
+    }
+  </style>
+</head>
+<body>
+  <svg width="220" height="220" viewBox="0 0 220 220">
+    <circle
+      cx="110"
+      cy="110"
+      r="91.036"
+      fill="none"
+      stroke="#007acc"
+      stroke-width="12"
+      stroke-linecap="round"
+    />
+  </svg>
+</body>
+</html>
