@@ -1,0 +1,33 @@
+.wrapper {
+  background-image: url("https://mdn.github.io/shared-assets/images/examples/balloons.jpg");
+  padding: 40px 20px;
+}
+
+.box {
+  padding: 10px;
+  margin: 0.5em 0;
+  border-radius: 0.5em;
+}
+.one {
+  background-color: antiquewhite;
+}
+
+.two {
+  background-color: #c55da1;
+}
+
+.three {
+  background-color: rgb(18 138 125);
+}
+
+.four {
+  background-color: rgb(118 200 55 / 0.9);
+}
+
+.five {
+  background-color: hwb(103 77% 31%);
+}
+
+.six {
+  background-color: hsl(146 63% 30% / 0.5);
+}
