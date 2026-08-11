@@ -1,0 +1,60 @@
+/* General setup */
+
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('myFonts/AbrilFatface-Regular.woff2') format('woff2'),
+        url('myFonts/AbrilFatface-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('myFonts/Poppins-Black.woff2') format('woff2'),
+        url('myFonts/Poppins-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+.oswald-regular {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  font-size: 10px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h1, h2 {
+    font-family: 'Abril Fatface', serif;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  word-spacing: 0.6rem;
+  font-family: "Oswald", sans-serif;
+}
