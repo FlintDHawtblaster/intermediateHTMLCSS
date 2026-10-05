@@ -1,0 +1,109 @@
+/* General setup */
+
+@font-face {
+    font-family: 'DM Sans 9pt';
+    src: url('fonts/DMSans-9ptRegular.woff2') format('woff2'),
+        url('fonts/DMSans-9ptRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('fonts/AbrilFatface-Regular.woff2') format('woff2'),
+        url('fonts/AbrilFatface-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'DM Sans 9pt';
+  letter-spacing: 1px;
+  line-height: 1.5em;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0 20px;
+  min-width: 980px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+main {
+  display: grid;
+  grid-template-columns: 5fr 2fr 2fr;
+  gap: 40px;
+  padding: 20px 0;
+}
+
+/* header and footer */
+
+header {
+  border-bottom: 5px solid #aa6666;
+}
+
+footer {
+  border-top: 5px solid #aa6666;
+}
+
+footer p {
+  text-align: center;
+}
+
+h1 {
+    font-family: 'Abril Fatface';
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+h2, nav a {
+    font-family: 'Abril Fatface';
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+h2 + p {
+    text-indent: 2em;
+}
+
+a {
+    outline: none;
+}
+
+a:link,
+a:visited {
+  color: #aa6666;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+  color: #773333;
+}
+
+img {
+    width: 0.7em;
+    height: 0.7em;
+}
+
+nav li {
+    list-style-type: none;
+    outline: 2px solid #aa6666;
+    text-align: center; 
+    margin: 20px;
+    padding: 15px 40px ;
+}
+
+nav a {
+    text-decoration: none;  
+    text-transform: uppercase;
+    font-size: 25px;
+}
