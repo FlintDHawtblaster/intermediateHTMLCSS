@@ -1,0 +1,20 @@
+main div {
+  background-color: red;
+}
+
+main > div > div {
+  background-color: yellow;
+}
+
+.group1 + div {
+  background-color: blue;
+}
+
+.group1 + div + div {
+  background-color: green;
+}
+
+/* All of .group1's div siblings - in this case the 2nd and 3rd .child divs, will get selected by this */
+/* .group1 ~ div {
+  background-color: brown;
+}  */
